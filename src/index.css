@@ -1,22 +1,74 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Bebas Neue", sans-serif;
-  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
+  --font-sans: "DM Sans", Arial, sans-serif;
+
+  /* Brand palette */
+  --color-ink: #000000;
+  --color-coal: #121212;
+  --color-body: #383838;
+  --color-paper: #ffffff;
+  --color-linen: #e9dcd2;
+  --color-cream: #f6f1ea;
+  --color-ember: #ee1515;
+  --color-ember-deep: #d10000;
+  --color-blaze: #ff691e;
+  --color-gold: #fdbc53;
+
+  /* Grays */
+  --color-mist: #fafafa;
+  --color-fog: #f0f0f0;
+  --color-ash: #e2e2e2;
+  --color-smoke: #d9d9d9;
+  --color-stone: #999999;
+  --color-slate: #333333;
+
+  /* Fluid display scale */
+  --text-hero: 19vw;
+  --text-display: clamp(3.75rem, -0.19rem + 16.83vw, 20rem);
+  --text-h3: clamp(2.75rem, 1.4757rem + 5.4369vw, 8rem);
+  --text-h4: clamp(2rem, 1.2112rem + 3.3657vw, 5.25rem);
+  --text-h5: clamp(1.75rem, 1.5376rem + 0.9061vw, 2.625rem);
+  --text-200: clamp(3rem, 0.6942rem + 9.8382vw, 12.5rem);
+  --text-year: clamp(5rem, 1.3592rem + 15.534vw, 20rem);
+  --text-logo: 40px;
+  --text-3xl: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
+
+  /* Body scale */
+  --text-xxs: 12px;
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 18px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 30px;
+
+  /* Radii */
+  --radius-pill: 90px;
+  --radius-card: 32px;
+  --radius-btn: 40px;
+
+  /* Layout */
+  --layout-container: 1680px;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /*
- * Cross-browser base layer. Tailwind's Preflight (included above) already
- * normalizes margins, paddings, and element defaults — this adds the
- * mobile/older-browser hardening Preflight doesn't cover.
+ * Cross-browser base layer. Tailwind's Preflight (included above) handles the
+ * element reset — this adds mobile/older-browser hardening it doesn't cover.
  */
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    scroll-behavior: auto;
   }
 
   body {
+    @apply bg-paper text-ink font-sans antialiased;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,10 +76,82 @@
     overflow-x: clip;
   }
 
-  /* Older Safari needs the prefixed form for crisp fixed backgrounds */
+  /* Fallback for browsers without overflow: clip */
   @supports not (overflow: clip) {
     body {
       overflow-x: hidden;
     }
+  }
+
+  ::selection {
+    background: var(--color-ember);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-coal);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ember);
+    border-radius: 8px;
+  }
+}
+
+/* Display type defaults */
+.font-display {
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+/* Signature gradient */
+.bg-brand-gradient {
+  background: linear-gradient(100deg, var(--color-ember) 0%, var(--color-blaze) 100%);
+}
+
+/* Marquee */
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee-x var(--marquee-duration, 30s) linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-x var(--marquee-duration, 30s) linear infinite reverse;
+}
+
+/* Slow orbit for leader portraits */
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-orbit {
+  animation: orbit-spin 60s linear infinite;
+}
+
+/* Reduced motion: kill CSS loops, keep content visible */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .animate-orbit {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

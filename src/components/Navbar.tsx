@@ -23,48 +23,46 @@ export default function Navbar({ ready, onMenuToggle }: NavbarProps) {
     <header className="fixed inset-x-0 top-0 z-40 text-paper">
       <nav
         aria-label="Main"
-        className="mx-auto flex max-w-[var(--layout-container)] items-stretch justify-between px-[var(--nav-padding-x)]"
+        className="mx-auto grid max-w-[var(--layout-container)] grid-cols-[1fr_auto] items-stretch px-[var(--nav-padding-x)] lg:grid-cols-[1fr_1fr_1fr_1fr_1fr_auto]"
       >
-        {/* Logo */}
+        {/* Column 1 — logo */}
         <Link
           to="/"
           className="flex items-center border-b border-[var(--nav-hairline-color)] py-[var(--nav-padding-y)]"
         >
-          <span className="font-display text-[var(--nav-logo-size)] leading-none">
+          <span className="font-display text-(length:--nav-logo-size) leading-none">
             {"// ARIYANA"}
           </span>
         </Link>
 
-        {/* Links — desktop only (source collapses below 992px, i.e. lg:) */}
-        <div className="hidden flex-1 grid-cols-4 lg:grid">
-          {LINKS.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className="group flex flex-1 items-center gap-[var(--nav-bullet-gap)] border-b border-[var(--nav-hairline-color)] py-[var(--nav-padding-y)]"
-            >
-              <span
-                aria-hidden="true"
-                className="block size-[var(--nav-bullet-size)] shrink-0 rounded-full border border-paper/70"
-              />
-              <span className="block overflow-hidden">
-                <span className="flex flex-col transition-transform duration-[var(--nav-anim-duration)] ease-[var(--nav-anim-ease)] group-hover:-translate-y-1/2">
-                  <span className="block py-[10px] text-[var(--nav-link-size)] font-[var(--nav-link-weight)] uppercase leading-[1.2] tracking-[var(--nav-link-tracking)]">
-                    {link.label}
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="block py-[10px] text-[var(--nav-link-size)] font-[var(--nav-link-weight)] uppercase leading-[1.2] tracking-[var(--nav-link-tracking)]"
-                  >
-                    {link.label}
-                  </span>
+        {/* Columns 2–5 — links (desktop only; source collapses below 992px) */}
+        {LINKS.map((link) => (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            className="group hidden items-center gap-[var(--nav-bullet-gap)] border-b border-[var(--nav-hairline-color)] py-[var(--nav-padding-y)] lg:flex"
+          >
+            <span
+              aria-hidden="true"
+              className="block size-[var(--nav-bullet-size)] shrink-0 rounded-full border border-paper/70 transition-all duration-[var(--nav-anim-duration)] ease-[var(--nav-anim-ease)] group-hover:scale-[var(--nav-bullet-scale)] group-hover:border-paper group-hover:bg-paper"
+            />
+            <span className="block h-[calc(var(--nav-link-size)*var(--nav-link-line-height))] overflow-hidden">
+              <span className="flex flex-col transition-transform duration-[var(--nav-anim-duration)] ease-[var(--nav-anim-ease)] group-hover:-translate-y-1/2">
+                <span className="font-nav-link block h-[calc(var(--nav-link-size)*var(--nav-link-line-height))] text-(length:--nav-link-size) uppercase leading-[var(--nav-link-line-height)] tracking-[var(--nav-link-tracking)]">
+                  {link.label}
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="font-nav-link block h-[calc(var(--nav-link-size)*var(--nav-link-line-height))] text-(length:--nav-link-size) uppercase leading-[var(--nav-link-line-height)] tracking-[var(--nav-link-tracking)]"
+                >
+                  {link.label}
                 </span>
               </span>
-            </NavLink>
-          ))}
-        </div>
+            </span>
+          </NavLink>
+        ))}
 
-        {/* Hamburger icon — diagonal at rest, horizontal on hover (recon) */}
+        {/* Last column — hamburger icon */}
         <button
           type="button"
           onClick={onMenuToggle}

@@ -14,6 +14,11 @@
   background: linear-gradient(var(--color-brand-red), var(--color-brand-orange));
 }
 
+/* Navbar link weight — token-driven (avoids text-/font- namespace ambiguity) */
+.font-nav-link {
+  font-weight: var(--nav-link-weight);
+}
+
 /* Marquee */
 @keyframes marquee-x {
   from {

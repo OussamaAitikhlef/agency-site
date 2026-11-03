@@ -1,0 +1,670 @@
+{
+  "version": 1,
+  "fragments": [
+    {
+      "id": "hero-image",
+      "type": "image",
+      "local": "/images/hero-vr.webp",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69540fd8b62303bd205db6be_hero%20image.webp",
+      "alt": "Hero background",
+      "format": "webp",
+      "sections": [
+        "hero"
+      ],
+      "note": "CSS background (.hero_image) with linear-gradient(#0003,#0003) overlay"
+    },
+    {
+      "id": "showreel-video",
+      "type": "video",
+      "local": "/videos/showreel.mp4",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F68f529d8f44ff8a8473854d5_0_Wind_Flowing_1920x1080-transcode.mp4",
+      "alt": "Showreel background video",
+      "format": "mp4",
+      "sections": [
+        "hero",
+        "showreel"
+      ],
+      "variants": [
+        {
+          "format": "webm",
+          "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F68f529d8f44ff8a8473854d5_0_Wind_Flowing_1920x1080-transcode.webm",
+          "remote": true,
+          "note": "remote-only: binary push unavailable from this environment; download via sourceUrl to make local"
+        }
+      ],
+      "poster": {
+        "local": "/images/showreel-poster.jpg",
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "about-pattern",
+      "type": "image",
+      "local": "/images/about-pattern.avif",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69102c8c9640a4d3428b8a78_about%20section%20pattern.avif",
+      "alt": "Abstract geometric design, white/red/orange rounded shapes",
+      "format": "avif",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "about-text-image",
+      "type": "image",
+      "local": "/images/about-text-image.avif",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/693ad24ad373d2e2bc4cdcdd_about-text-image.avif",
+      "alt": "About inline text image",
+      "format": "avif",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "timeline-year-2020",
+      "type": "image",
+      "local": "/images/timeline/year-2020.webp",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "timeline-year-2021",
+      "type": "image",
+      "local": "/images/timeline/year-2021.webp",
+      "sourceUrl": null,
+      "alt": "about year card image",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "timeline-year-2022",
+      "type": "image",
+      "local": "/images/timeline/year-2022.webp",
+      "sourceUrl": null,
+      "alt": "about year card image",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "timeline-year-2023",
+      "type": "image",
+      "local": "/images/timeline/year-2023.webp",
+      "sourceUrl": null,
+      "alt": "about year card image",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "timeline-year-2024",
+      "type": "image",
+      "local": "/images/timeline/year-2024.webp",
+      "sourceUrl": null,
+      "alt": "about year card image",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "timeline-year-2025",
+      "type": "image",
+      "local": "/images/timeline/year-2025.webp",
+      "sourceUrl": null,
+      "alt": "about year card image",
+      "format": "webp",
+      "sections": [
+        "about",
+        "timeline"
+      ]
+    },
+    {
+      "id": "about-stat-visual-1",
+      "type": "image",
+      "local": "/images/about-stats-1.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/6918063c04ac0e9a5a36ce22_about%20stats%20item%20visual%201.svg",
+      "alt": "About stat item visual 1",
+      "format": "svg",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "about-stat-visual-2",
+      "type": "image",
+      "local": "/images/about-stats-2.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69185c0cdc09e9e742d0f60b_about%20stats%20item%20visual%202.svg",
+      "alt": "About stat item visual 2",
+      "format": "svg",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "about-stat-visual-3",
+      "type": "image",
+      "local": "/images/about-stats-3.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69185d0f6aaf2303431ab147_about%20stats%20item%20visual%203.svg",
+      "alt": "About stat item visual 3",
+      "format": "svg",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "about-stat-visual-4",
+      "type": "image",
+      "local": "/images/about-stats-4.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69185ed0ca84667f1b6b8899_about%20stats%20item%20visual%204.svg",
+      "alt": "About stat item visual 4",
+      "format": "svg",
+      "sections": [
+        "about"
+      ]
+    },
+    {
+      "id": "service-video-1",
+      "type": "video",
+      "local": "/videos/service-1.mp4",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eea1bb25aad03f4b09bef_service%20video%201-transcode.mp4",
+      "alt": "Service video 1",
+      "format": "mp4",
+      "sections": [
+        "services"
+      ],
+      "variants": [
+        {
+          "format": "webm",
+          "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eea1bb25aad03f4b09bef_service%20video%201-transcode.webm",
+          "remote": true,
+          "note": "remote-only: binary push unavailable from this environment; download via sourceUrl to make local"
+        }
+      ],
+      "poster": {
+        "local": "/images/service-posters/poster-1.jpg",
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "service-video-2",
+      "type": "video",
+      "local": "/videos/service-2.mp4",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb4320de4e6f3fcb5f21_service%20video%202-transcode.mp4",
+      "alt": "Service video 2",
+      "format": "mp4",
+      "sections": [
+        "services"
+      ],
+      "variants": [
+        {
+          "format": "webm",
+          "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb4320de4e6f3fcb5f21_service%20video%202-transcode.webm",
+          "remote": true,
+          "note": "remote-only: binary push unavailable from this environment; download via sourceUrl to make local"
+        }
+      ],
+      "poster": {
+        "local": "/images/service-posters/poster-2.jpg",
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "service-video-3",
+      "type": "video",
+      "local": "/videos/service-3.mp4",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb7798054641a570ca23_service%20video%203-transcode.mp4",
+      "alt": "Service video 3",
+      "format": "mp4",
+      "sections": [
+        "services"
+      ],
+      "variants": [
+        {
+          "format": "webm",
+          "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb7798054641a570ca23_service%20video%203-transcode.webm",
+          "remote": true,
+          "note": "remote-only: binary push unavailable from this environment; download via sourceUrl to make local"
+        }
+      ],
+      "poster": {
+        "local": "/images/service-posters/poster-3.jpg",
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "service-video-4",
+      "type": "video",
+      "local": "/videos/service-4.mp4",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb808cbab7338dc87efa_service%20video%204-transcode.mp4",
+      "alt": "Service video 4",
+      "format": "mp4",
+      "sections": [
+        "services"
+      ],
+      "variants": [
+        {
+          "format": "webm",
+          "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b%2F690eeb808cbab7338dc87efa_service%20video%204-transcode.webm",
+          "remote": true,
+          "note": "remote-only: binary push unavailable from this environment; download via sourceUrl to make local"
+        }
+      ],
+      "poster": {
+        "local": "/images/service-posters/poster-4.jpg",
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "service-text-image",
+      "type": "image",
+      "local": "/images/service-text-image.avif",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/693ad165b0d4a43c870f458b_service%20text%20Image.avif",
+      "alt": "Service inline text image",
+      "format": "avif",
+      "sections": [
+        "services"
+      ]
+    },
+    {
+      "id": "work-card-1",
+      "type": "image",
+      "local": "/images/works/work-1.avif",
+      "sourceUrl": null,
+      "alt": "Drink Different web design",
+      "format": "avif",
+      "sections": [
+        "works"
+      ]
+    },
+    {
+      "id": "work-card-2",
+      "type": "image",
+      "local": "/images/works/work-2.avif",
+      "sourceUrl": null,
+      "alt": "Push Past packaging design",
+      "format": "avif",
+      "sections": [
+        "works"
+      ]
+    },
+    {
+      "id": "work-card-3",
+      "type": "image",
+      "local": "/images/works/work-3.avif",
+      "sourceUrl": null,
+      "alt": "Packaging design on-demand",
+      "format": "avif",
+      "sections": [
+        "works"
+      ]
+    },
+    {
+      "id": "work-card-4",
+      "type": "image",
+      "local": "/images/works/work-4.avif",
+      "sourceUrl": null,
+      "alt": "Plenova web design",
+      "format": "avif",
+      "sections": [
+        "works"
+      ]
+    },
+    {
+      "id": "brand-logo-1",
+      "type": "image",
+      "local": "/icons/brand-1.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "brand-logo-2",
+      "type": "image",
+      "local": "/icons/brand-2.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "brand-logo-3",
+      "type": "image",
+      "local": "/icons/brand-3.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "brand-logo-4",
+      "type": "image",
+      "local": "/icons/brand-4.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "brand-logo-5",
+      "type": "image",
+      "local": "/icons/brand-5.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "brand-logo-6",
+      "type": "image",
+      "local": "/icons/brand-6.svg",
+      "sourceUrl": null,
+      "alt": "brand logo",
+      "format": "svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "leader-1",
+      "type": "image",
+      "local": "/images/leaders/leader-1.png",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "png",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-2",
+      "type": "image",
+      "local": "/images/leaders/leader-2.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-3",
+      "type": "image",
+      "local": "/images/leaders/leader-3.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-4",
+      "type": "image",
+      "local": "/images/leaders/leader-4.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-5",
+      "type": "image",
+      "local": "/images/leaders/leader-5.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-6",
+      "type": "image",
+      "local": "/images/leaders/leader-6.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-7",
+      "type": "image",
+      "local": "/images/leaders/leader-7.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-8",
+      "type": "image",
+      "local": "/images/leaders/leader-8.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-9",
+      "type": "image",
+      "local": "/images/leaders/leader-9.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "leader-10",
+      "type": "image",
+      "local": "/images/leaders/leader-10.avif",
+      "sourceUrl": null,
+      "alt": "",
+      "format": "avif",
+      "sections": [
+        "leaders"
+      ]
+    },
+    {
+      "id": "testimony-author-1",
+      "type": "image",
+      "local": "/images/testimonials/author-1.avif",
+      "sourceUrl": null,
+      "alt": "Testimonial author 1",
+      "format": "avif",
+      "sections": [
+        "testimonials"
+      ]
+    },
+    {
+      "id": "testimony-author-2",
+      "type": "image",
+      "local": "/images/testimonials/author-2.avif",
+      "sourceUrl": null,
+      "alt": "Testimonial author 2",
+      "format": "avif",
+      "sections": [
+        "testimonials"
+      ]
+    },
+    {
+      "id": "testimony-author-3",
+      "type": "image",
+      "local": "/images/testimonials/author-3.avif",
+      "sourceUrl": null,
+      "alt": "Testimonial author 3",
+      "format": "avif",
+      "sections": [
+        "testimonials"
+      ]
+    },
+    {
+      "id": "why-choose-1",
+      "type": "image",
+      "local": "/images/why-choose-1.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/6918ac29f9289130a61af138_why%20choose%20image%201.svg",
+      "alt": "Why choose image 1",
+      "format": "svg",
+      "sections": [
+        "why-choose"
+      ]
+    },
+    {
+      "id": "why-choose-2",
+      "type": "image",
+      "local": "/images/why-choose-2.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/6918ae7d4a2c123c73b32c46_why%20choose%20image%202.svg",
+      "alt": "Why choose image 2",
+      "format": "svg",
+      "sections": [
+        "why-choose"
+      ]
+    },
+    {
+      "id": "why-choose-3",
+      "type": "image",
+      "local": "/images/why-choose-3.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/6918aea29a3e63b26cec7e10_why%20choose%20image%203.svg",
+      "alt": "Why choose image 3",
+      "format": "svg",
+      "sections": [
+        "why-choose"
+      ]
+    },
+    {
+      "id": "play-button",
+      "type": "image",
+      "local": "/icons/play-button.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/690ed6eb94e729b06fd5b156_play%20icon.svg",
+      "alt": "Play video",
+      "format": "svg",
+      "sections": [
+        "showreel"
+      ]
+    },
+    {
+      "id": "pause-button",
+      "type": "image",
+      "local": "/icons/pause-button.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/69102b3e0b0940fe98f3251f_video%20play%20button.svg",
+      "alt": "Pause video",
+      "format": "svg",
+      "sections": [
+        "showreel"
+      ]
+    },
+    {
+      "id": "select-arrow",
+      "type": "image",
+      "local": "/icons/select-arrow.svg",
+      "sourceUrl": "https://cdn.prod.website-files.com/68efdb35db90f2ad02b2fe4b/6933cd3a6f29c1141a6f57a5_select%20box%20arrow.svg",
+      "alt": "Select box arrow",
+      "format": "svg",
+      "sections": [
+        "contact"
+      ]
+    },
+    {
+      "id": "favicon",
+      "type": "image",
+      "local": "/favicon.svg",
+      "sourceUrl": null,
+      "alt": "Site favicon",
+      "format": "svg",
+      "sections": [
+        "global"
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "id": "tiktok",
+      "file": "fragments/icons/tiktok.svg",
+      "sections": [
+        "hero"
+      ]
+    },
+    {
+      "id": "facebook",
+      "file": "fragments/icons/facebook.svg",
+      "sections": [
+        "hero"
+      ]
+    },
+    {
+      "id": "plus-pattern",
+      "file": "fragments/icons/plus-pattern.svg",
+      "sections": [
+        "hero"
+      ]
+    },
+    {
+      "id": "plus-pattern-sm",
+      "file": "fragments/icons/plus-pattern-sm.svg",
+      "sections": [
+        "brands"
+      ]
+    },
+    {
+      "id": "star",
+      "file": "fragments/icons/star.svg",
+      "sections": [
+        "testimonials"
+      ]
+    },
+    {
+      "id": "arrow-long",
+      "file": "fragments/icons/arrow-long.svg",
+      "sections": [
+        "process"
+      ]
+    },
+    {
+      "id": "chevron-down",
+      "file": "fragments/icons/chevron-down.svg",
+      "sections": [
+        "process"
+      ]
+    },
+    {
+      "id": "arrow-circle",
+      "file": "fragments/icons/arrow-circle.svg",
+      "sections": [
+        "cta"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,7 @@
 export default function About() {
-  return <main className="min-h-screen bg-ink font-sans text-paper" />;
+  return (
+    <main className="flex min-h-screen items-center justify-center bg-ink font-sans text-paper">
+      <p className="text-sm uppercase tracking-widest">/about-us</p>
+    </main>
+  );
 }

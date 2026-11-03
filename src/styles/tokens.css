@@ -66,4 +66,21 @@
   /* ---- Layout ---- */
   --layout-container: 1680px;
   --radius-card: 40px;
+
+  /* ---- Navbar (desktop; values from live-site recon + Webflow CSS) ---- */
+  --nav-padding-x: 28px;
+  --nav-padding-y: 20px;
+  --nav-logo-size: var(--text-h5);
+  --nav-link-size: var(--text-sm);
+  --nav-link-weight: 500; /* [approx] recon: regular/medium */
+  --nav-link-tracking: 0.06em; /* [approx] recon: ~1px at 16px */
+  --nav-bullet-size: 12px;
+  --nav-bullet-gap: 20px;
+  --nav-hairline-color: var(--color-paper);
+  --nav-icon-width: 70px;
+  --nav-icon-line-w: 32px;   /* middle stroke; outer strokes 16px */
+  --nav-icon-line-h: 2px;
+  --nav-icon-gap: 8px;
+  --nav-anim-duration: 0.35s;
+  --nav-anim-ease: cubic-bezier(0.215, 0.61, 0.355, 1); /* easeOutCubic ~ power2.out */
 }

@@ -1,30 +1,34 @@
+import { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { SmoothScroll } from "./components/SmoothScroll";
-import { ScrollToTop } from "./components/ScrollToTop";
+import { useLenis } from "./hooks/useLenis";
+import { Preloader } from "./components/Preloader";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
 
+export default function App() {
+  const [loading, setLoading] = useState(true);
+  const { stop, start } = useLenis();
 
-function App() {
+  // Lock scroll while the preloader runs.
+  useEffect(() => {
+    if (!loading) return;
+    stop();
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [loading, stop]);
+
+  const handleDone = useCallback(() => {
+    start();
+    setLoading(false);
+  }, [start]);
+
   return (
     <BrowserRouter>
-      <SmoothScroll>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </SmoothScroll>
+      {loading && <Preloader onDone={handleDone} />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
-
-export default App

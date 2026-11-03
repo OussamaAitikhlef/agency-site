@@ -8,7 +8,8 @@ import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
-export default function App() {
+
+function App() {
   return (
     <BrowserRouter>
       <SmoothScroll>
@@ -23,11 +24,7 @@ export default function App() {
         </Routes>
       </SmoothScroll>
     </BrowserRouter>
-  );
+  )
 }
-<<<<<<< HEAD
 
-export default App;
-
-=======
->>>>>>> 5e8cf1d1de0c9bd01a8384bbe0ec8f9cf022f057
+export default App

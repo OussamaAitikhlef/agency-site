@@ -67,10 +67,10 @@ export function Preloader({ onDone }: PreloaderProps) {
     <div
       ref={rootRef}
       aria-hidden="true"
-      className="fixed inset-0 z-50 bg-ink"
+      className="fixed inset-0 z-50 overflow-hidden bg-ink"
     >
-      <div className="flex h-full items-center justify-center">
-        <div className="pl-logo flex" aria-label="//ARIYANA">
+      <div className="flex h-full items-center justify-center px-6">
+        <div className="pl-logo flex whitespace-nowrap" aria-label="//ARIYANA">
           {LOGO_CHARS.map((ch, i) => (
             <span key={i} className="inline-block overflow-hidden">
               <span className="pl-char-inner inline-block font-display text-[clamp(2rem,4vw,3.5rem)] text-paper">

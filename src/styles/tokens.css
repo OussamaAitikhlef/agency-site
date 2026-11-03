@@ -1,0 +1,69 @@
+/* ==========================================================================
+   SINGLE SOURCE OF TRUTH — keep tokens.css and tokens.json in sync when editing.
+   Extracted from the Ariyana Studio Webflow source (index.html, style-guide.html,
+   shared CSS variables). Values marked [approx] were not in the source.
+   ========================================================================== */
+
+@theme {
+  /* ---- Brand ---- */
+  --color-brand-red: #ee1615;
+  --color-brand-orange: #ff691e;
+  --gradient-brand: linear-gradient(#ee1515, #ff691e);
+
+  /* ---- Neutrals ---- */
+  --color-ink: #121212;      /* black-secondary — page dark surfaces */
+  --color-black: #000000;    /* black-primary — deepest black */
+  --color-paper: #ffffff;    /* page light background */
+  --color-linen: #e9dcd2;    /* hairline borders, dividers */
+  --color-gray: #383838;     /* muted body text on light */
+
+  /* ---- Featured-work cards (card bg -> right-panel deep tone) ---- */
+  --color-card-lavender: #ab9bff;
+  --color-card-lavender-deep: #8673ee;
+  --color-card-coral: #ff905f;
+  --color-card-coral-deep: #ff7d44;
+  --color-card-rose: #ff767a;
+  --color-card-rose-deep: #ff5b60;
+  --color-card-olive: #b8c56f;
+  --color-card-olive-deep: #9fae4b;
+
+  /* ---- Floating hero badges (pastel set) ---- */
+  --color-badge-peach: #ff8f64;    /* also canvas-menu social icon bg */
+  --color-badge-lavender: #dca8ff;
+  --color-badge-mint: #b7ff93;
+  --color-badge-pink: #f8a7ff;
+  --color-badge-sand: #ffd37a;
+  --color-badge-blush: #ffa5a6;
+
+  /* ---- Fonts ---- */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-sans: "DM Sans", Arial, sans-serif;
+
+  /* ---- Type scale: headings (exact Webflow values) ---- */
+  --text-h1: 19vw;
+  --text-h2: clamp(3.75rem, -0.1942rem + 16.8285vw, 20rem);
+  --text-h3: clamp(2.75rem, 1.4757rem + 5.4369vw, 8rem);
+  --text-h4: clamp(2rem, 1.2112rem + 3.3657vw, 5.25rem);
+  --text-h5: clamp(1.75rem, 1.5376rem + 0.9061vw, 2.625rem);
+  --text-h6: 1.5rem; /* [approx] not present in source */
+
+  /* ---- Type scale: body utilities (exact Webflow values) ---- */
+  --text-xxs: 0.75rem;   /* 12px */
+  --text-xs: 0.875rem;   /* 14px */
+  --text-sm: 1rem;       /* 16px */
+  --text-md: 1.125rem;   /* 18px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.5rem;     /* 24px */
+  --text-2xl: 1.875rem;  /* 30px */
+  --text-3xl: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
+
+  /* ---- Display extras (exact Webflow values, section-specific) ---- */
+  --text-200: clamp(3rem, 0.6942rem + 9.8382vw, 12.5rem);   /* oversized display */
+  --text-year: clamp(5rem, 1.3592rem + 15.534vw, 20rem);    /* timeline year numerals */
+  --text-logo: 40px;                                        /* nav logo text */
+
+  /* ---- Layout ---- */
+  --layout-container: 1680px;
+  --radius-card: 40px;
+}
